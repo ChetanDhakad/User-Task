@@ -1,0 +1,32 @@
+<%- include('./partials/header')%>
+<link rel="stylesheet" href="/stylesheets/signup.css">
+<div class="container mt-1">
+   <form class="form" action="/signup" method="post">
+        <h2>Create New User With Task</h2>
+        <input  type="text"
+            placeholder="username"
+            name="username" required>
+        <input  type="email"
+            placeholder="email"
+            name="email" required>
+        <input  type="contact"
+            placeholder="contact"
+            name="contact" required>
+        <input type="password"
+            placeholder="password"
+            name="password" required>
+        <input type="text"
+            placeholder="task heading"
+            name="heading" required>
+        <input type="text"
+            placeholder="task"
+            name="task" required>
+            <button class="btn btn-success mb-3 ">Create account</button>
+        <p>Already have an account? <a href="/signin">Signin</a></p>
+
+    </form> 
+    
+</div>
+
+
+<%- include('./partials/footer')%>

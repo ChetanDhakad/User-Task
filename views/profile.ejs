@@ -1,0 +1,25 @@
+<%-include('./partials/header')%>
+
+<div class="container mt-5">
+  <a class="btn btn-success" href="/signout"> Signout </a>
+  <a class="btn btn-success" href="/reset-password">Reset Password</a>
+
+  <h1>Hello <%=user.username%>👋</h1>
+
+  <div class="card mt-5" style="width: 700px;">
+    <div class="card-header">
+      <h4><%=user.heading%></h4>
+    </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5> -->
+      <p class="card-text"><%=user.task%></p>
+      <hr>
+      <h6 style="color: red;" >Pending task</h6>
+    </div>
+  </div>
+  <a href="/export-users" class="btn btn-danger mt-2">export</a>
+
+
+</div>
+
+<%-include('./partials/footer')%>

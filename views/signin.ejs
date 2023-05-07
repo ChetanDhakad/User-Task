@@ -1,0 +1,16 @@
+<%- include('./partials/header')%>
+
+<div class="container mt-5" >
+    <h3 class="fw-light fs-3 alert alert-dark w-50">
+        User can signin to see your tasks</h3>
+    <form action="/signin" method="post">
+        <input class="mb-3 form-control w-75" type="text" placeholder="username" name="username">
+        <input class="mb-3 form-control w-75" type="password" placeholder="*****" name="password">
+        <button class="btn btn-success mb-3">Signin</button>
+        <a class="btn btn-success mb-3" href="/forget-password">Forget password</a>
+    </form>
+    <p>Doesn't have an account ? <a href="/signup">Signup</a></p>
+       
+</div>
+
+<%- include('./partials/footer')%>

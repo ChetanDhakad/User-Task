@@ -1,0 +1,23 @@
+<%-include('./partials/header')%>
+
+<h2>This is Forget password page</h2>
+<form 
+action="/send-mail" 
+method="post"
+class="container mt-5 text-centre p-5 w-50"
+>
+
+<input 
+type="email" 
+name="email" 
+placeholder="Enter your email"
+class="form-control m-auto w-75 p-2 mb-4"
+>
+
+<button class="btn btn-success" >Send mail</button>
+<br>
+<a class="btn btn-success mt-2" href="/">Home</a>
+</form>
+
+<%-include('./partials/footer')%>
+

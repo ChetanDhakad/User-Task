@@ -1,0 +1,23 @@
+<%-include('./partials/header')%>
+
+<div class="container mt-5">
+  <h3 class="fw-light fs-3 alert alert-dark w-50">
+    Continue changing password
+  </h3>
+  <form action="/reset-password" method="post">
+    <input
+      class="mb-3 form-control w-75"
+      type="text"
+      placeholder="old password"
+      name="oldPassword"
+    />
+    <input
+      class="mb-3 form-control w-75"
+      type="text"
+      placeholder="new password"
+      name="newPassword"
+    />
+    <button class="btn btn-success">Reset Password</button>
+  </form>
+</div>
+<%-include('./partials/footer')%>
